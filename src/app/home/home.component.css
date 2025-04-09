@@ -1,0 +1,14 @@
+/* home.component.css */
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .welcome-card {
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
