@@ -1,15 +1,15 @@
-<!-- home.component.html -->
-
-<div class="home-container">
-    <mat-card class="welcome-card mat-elevation-z6">
-      <mat-card-title>Hello! I’m <strong>Mayurakshya Paul</strong></mat-card-title>
-      <mat-card-subtitle>Developer | Designer | Tech Enthusiast</mat-card-subtitle>
-      <mat-card-content>
-        <p>I build clean, scalable web applications using Angular and modern tech.</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button color="accent" routerLink="/projects">View Projects</button>
-      </mat-card-actions>
-    </mat-card>
-</div>
+<div class="hero-container" [@fadeIn]>
+    <div class="glass-card">
+      <h1 class="name" [@slideInDown]>Hi, I'm <span class="highlight">{{name}}</span></h1>
+      <h2 class="role" [@slideInUp]>Full Stack Developer</h2>
+      <p class="desc" [@fadeInSlow]>
+        I build modern and beautiful web apps with Angular, Spring Boot, and more.
+      </p>
+  
+      <div class="btn-group" [@fadeInSlow]>
+        <button mat-raised-button color="primary" routerLink="/projects">Explore Projects</button>
+        <a mat-stroked-button color="accent" href="https://drive.google.com/file/d/1aspYV8rNQzxA1_vUU3SjljW5k44-3x_T/view?usp=drive_link" target="_blank">Resume</a>
+      </div>
+    </div>
+  </div>
   

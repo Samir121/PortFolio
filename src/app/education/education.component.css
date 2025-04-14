@@ -1,0 +1,11 @@
+.education-container {
+    padding: 24px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .edu-card {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  

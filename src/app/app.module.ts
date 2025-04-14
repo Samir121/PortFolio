@@ -12,22 +12,40 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { AcheivementsComponent } from './acheivements/acheivements.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HomeComponent } from './home/home.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatIconModule } from '@angular/material/icon';
+import { ContactsComponent } from './contacts/contacts.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SkillsComponent,
+    ProjectsComponent,
     EducationComponent,
     WorkExperienceComponent,
     AcheivementsComponent,
-    HomeComponent,  ],
+    HomeComponent,
+    ContactsComponent  
+  ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule,
+    MatProgressBarModule,
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration(withEventReplay())

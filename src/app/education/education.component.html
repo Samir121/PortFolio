@@ -1,1 +1,18 @@
-<p>education works!</p>
+<div class="education-container">
+    <h2 class="mat-headline">📘 My Education</h2>
+  
+    <mat-card *ngFor="let edu of educationList" class="edu-card">
+      <mat-card-header>
+        <mat-icon mat-card-avatar>school</mat-icon>
+        <mat-card-title>{{ edu.degree }}</mat-card-title>
+        <mat-card-subtitle>{{ edu.institution }}</mat-card-subtitle>
+      </mat-card-header>
+  
+      <mat-card-content>
+        <p><strong>Duration:</strong> {{ edu.duration }}</p>
+        <p><strong>Location:</strong> {{ edu.location }}</p>
+        <p>{{ edu.description }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

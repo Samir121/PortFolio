@@ -1,1 +1,19 @@
-<p>skills works!</p>
+<div class="skills-container">
+    <h2 class="section-title">🚀 My Skills</h2>
+  
+    <div class="skills-grid">
+      <mat-card class="skill-card" *ngFor="let skill of skills">
+        <mat-card-header>
+          <div mat-card-avatar class="skill-icon">
+            <mat-icon>{{ skill.icon }}</mat-icon>
+          </div>
+          <mat-card-title>{{ skill.name }}</mat-card-title>
+          <mat-card-subtitle>{{ skill.level }}% Proficiency</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-progress-bar mode="determinate" [value]="skill.level" color="primary"></mat-progress-bar>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  

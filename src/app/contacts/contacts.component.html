@@ -1,0 +1,30 @@
+<div class="contact-container">
+    <h2 class="section-title">📞 Get in Touch</h2>
+  
+    <form class="contact-form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput type="text" name="name" ngModel required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" name="email" ngModel required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Subject</mat-label>
+        <input matInput type="text" name="subject" ngModel />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Message</mat-label>
+        <textarea matInput name="message" rows="5" ngModel required></textarea>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit">
+        Send Message
+      </button>
+    </form>
+  </div>
+  
