@@ -10,6 +10,7 @@ export class DataService {
   constructor(private http:HttpClient) { }
   
   getName(): Observable<String> {
+    // return "Samir Sujan";
     return this.http.get(`${this.baseUrl}/test`, { responseType: 'text' });
   }
 
